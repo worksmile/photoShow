@@ -1,0 +1,39 @@
+*{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.wrapper div{
+    width: 20%;
+    display: inline-block;
+    flex-grow: 1;
+}
+.wrapper div img{
+    width: 100%;
+}
+@media screen and (max-width:1000px){
+    .wrapper div{
+        width: 25%;
+    }
+}
+@media screen and (max-width:800px){
+    .wrapper div{
+        width:33.33%;
+    }
+}
+@media screen and (max-width:600px){
+    .wrapper div{
+        width: 50%;
+    }
+}
+@media screen and (max-width:400px){
+    .wrapper div{
+        width: 100%;
+    }
+}
